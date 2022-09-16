@@ -92,6 +92,36 @@ List versus array performance: Introducing %timeit
   - You can combine arrays by adding more columns or more rows -- known as horizontal and vertical stacking. 
   - Combine two arrays using hstack to combine horizontalls or vstack to combine vertically. 
   
+  Pandas series:
+  - A series is an enhances one-dimensional array. 
+  - Series support custom indexing, including even non-integer indices like strings. 
+  - The default indice starts at 0. 
+  - Pandas displays a series in a two-column format. 
+  - Can use mean, count, min, max, std, and describe. 
+  - The describe method produces all stats. 
+  - The interquartile range is the 75% minus 25% quartile. 
+  - You can also create a series with custom indices. 
+  - You can initialize a series with a dictionary, its keys become the series' indices and its values become the elements. 
+  
+  DataFrames: 
+  - A dataframe is an enhanced two-dimensional array. 
+  - Can change the indices on a dataframe. 
+  - The loc attribute allows you to access a row by its label. Can also use iloc
+  - You can also use an index as a slice. 
+  - Can select subsets of rows and columns. 
+  - Compatible with boolean indexing where you can look for specific values, ie all grades over 90. 
+  - Grades that don't satisfy the condition are represented as NaN (Not a Number). 
+  - Can use at and iat to get a single value from a DataFrame. 
+  - Can use describe on data frames as well. 
+  - Can Transpose use .T
+  - sort_index allows you to sort rows in descending order. 
+  - axis=1 keyword argument indicates that we wish to sort the column indices. 
+  
+  Chapter 8 Notes: 
+  
+  Formatting Strings:
+  - Presentation Types
+    - 
   
   
   
