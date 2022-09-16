@@ -121,8 +121,70 @@ List versus array performance: Introducing %timeit
   
   Formatting Strings:
   - Presentation Types
-    - 
-  
+    - Have worked with presentation type f in the format specifier. 
+    - d presentation type formats integer values as strings
+    - c presentation type formats an integer character code as the corresponding character 
+    - s presentation type is the default. 
+    - Exponential notation can be used to format the values more compactly. 
+  - Field Widths and Alignment 
+    - Previously, used field widths to format text in a specified number of character options. 
+      - By default, python right aligns numbers and left aligns other values like strings. 
+      - Specify alignment using < and > for left and right alignment. 
+    - You can center values using ^ 
+  - Numeric Formatting
+    - You can use a + to force a positive sign on a number, similarly with a -. 
+    - You can format numbers with thousands separators by using a comma. 
+  - String's Format Method 
+    - Prior to f-strings, the format function was used. 
+    - Can contain multiple placeholders
+    - Can reference arguments by position number. 
+    
+Concatenating and Repeating Strings: 
+- You can perform concatenations using augmented assignments. 
+- Combine two strings using += 
+Stripping Whitespace from strings
+- Use method .strip to remove the leading and trailing whitespace. 
+- lstrip removes only leading whitespace. 
+
+Changing Character Case: 
+- Method capitalize copies the original string and returns a new string with only the first letter capitalized. 
+- Method title copies the original string and returns a new string with only the first character of each word capitalized. 
+
+Comparison Operators for Strings: 
+- Use comparison operators to compare strings - these are case sensitive. 
+
+Searching for Substrings: 
+- count for a substring returns the number of times its argument occurs in the string. 
+- If you specify a start and end index, will only search up to ending argument. 
+- index searches for a substring within a string and returns the first index at which the substring is found. 
+- rindex performs the same operation as index, but searches from the end of the string and returns the last index at which the substring is found. 
+- find and rfind perform the same tasks as index and rindex but, if the substring is not found, return -1 rather than causing a ValueError. 
+- Can use in to ask if a substring is in a string. 
+- startswith and endswith return TRUE if the string starts with or ends with a specified substring. 
+Replacing substrings: 
+- Method replace takes two substrings. It searches a string for the substring in its first argument and replaces each occurence with the substring in its second argument. 
+
+Splitting and Joining strings:
+- Characters are typically separated by whitespace characters such as blank, tab, and newline, though other characters may be used - these are called delimiters. 
+- To tokenize using .split just add a delimiter (', '). 
+- rsplit method performs the same task as split but processes the maximum number of splits from the end of the string to the beginning. 
+- Join concatenates the strings in its argument, which must be an iterable containing only string values. 
+- partition splits a string into a tuple of three strings based on the method's separator argument. 
+- To search for the separator from the end, use rpartition. 
+- Method splitlines returns a list of new strings representing the lines of text split at each newline character in the original string. 
+
+Characters and Character-Testing Methods:
+- Characters are fundamental building blocks of programs. 
+- String method isdigit returns true if the string on which you call the method contains only the digit characters. 
+- Another list of is functions on page 298. 
+
+Raw Strings: 
+- raw strings preceded by character r treat a file path that uses \\. 
+
+Introduction to Regular Expressions:
+- A regular expression string describes a search pattern for matching characters in other strings. 
+
+
   
   
   
